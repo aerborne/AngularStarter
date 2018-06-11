@@ -1,6 +1,6 @@
-const express = require('express');
-const router = express.Router();
-
-module.exports = {
+module.exports = (app) => {
+    app.get('/try', (req, res)=>{
+        res.send('hello world');
+    })
 
 }
